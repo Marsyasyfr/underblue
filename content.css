@@ -1,0 +1,383 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Lucida Grande";
+}
+  
+a {
+    text-decoration: none;
+}
+  
+.clear {
+    clear: left;
+}
+  
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+  
+.fa {
+    margin-right: 5px;
+}
+  
+header {
+    height: 65px;
+    width: 100%;
+    background-color: rgb(245, 122, 153);
+    position :fixed;
+    top: 0;
+    z-index: 10;
+}
+  
+.logo {
+    width: 100px;
+}
+  
+.atas-kiri {
+    float: left;
+    margin-top: 13px;
+}
+  
+.atas-kanan {
+    float: right;
+    margin-right: -25px;
+}
+  
+.atas-kanan a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+}
+  
+.atas-kanan a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+  
+.menu-icon{
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    display: none;
+}
+  
+
+.foto {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .foto h2 {
+    font-size: 28px;
+    color: #ff1c60;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+
+  .gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 300px;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
+  .slider {
+    width: 100%;
+height: 300px; /* Ukuran tetap agar semua gambar muat */
+overflow: hidden;
+border-radius: 16px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+position: relative;
+background-color: #fff;
+  }
+
+  .slides {
+    display: flex;
+    width: 200%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  /* SLIDER 1 - mengontrol gerakan .slides */
+  #slide1-1:checked ~ .slider1 .slides {
+    transform: translateX(0%);
+  }
+
+  #slide1-2:checked ~ .slider1 .slides {
+    transform: translateX(-50%);
+  }
+
+  #slide1-3:checked ~ .slider1 .slides {
+    transform: translateX(-100%);
+  }
+
+  #slide1-4:checked ~ .slider1 .slides {
+    transform: translateX(-150%);
+  }
+
+  #slide1-5:checked ~ .slider1 .slides {
+    transform: translateX(-200%);
+  }
+
+  /* SLIDER 2 */
+  #slide2-1:checked ~ .slider2 .slides {
+    transform: translateX(0%);
+  }
+
+  #slide2-2:checked ~ .slider2 .slides {
+    transform: translateX(-50%);
+  }
+
+  #slide2-3:checked ~ .slider2 .slides {
+    transform: translateX(-100%);
+  }
+
+  #slide2-4:checked ~ .slider2 .slides {
+    transform: translateX(-150%);
+  }
+
+  #slide2-5:checked ~ .slider2 .slides {
+    transform: translateX(-200%);
+  }
+
+  #slide3-1:checked ~ .slider3 .slides {
+    transform: translateX(0%);
+  }
+
+  #slide3-2:checked ~ .slider3 .slides {
+    transform: translateX(-50%);
+  }
+
+  #slide4-1:checked ~ .slider4 .slides {
+    transform: translateX(-0%);
+  }
+
+  #slide4-2:checked ~ .slider4 .slides {
+    transform: translateX(-50%);
+  }
+
+  #slide4-3:checked ~ .slider4 .slides {
+    transform: translateX(-100%);
+  }
+
+  .navigation-manual {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .manual-btn {
+    width: 14px;
+    height: 14px;
+    border: 2px solid #ff4081;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 5px;
+    background-color: white;
+  }
+
+  .manual-btn:hover {
+    background-color: #ff1c60;
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: #ff1c60;
+  }
+
+  .desc {
+    font-size: 14px;
+    color: #ff1c60;
+    padding: 0 10px;
+    margin-top: 10px;
+  }
+
+
+.video-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .video-title {
+    color: #ff1c60;
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  .video-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .video-box {
+    width: 400px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  
+  .video-box h3 {
+    color: #ff1c60;
+    margin-bottom: 10px;
+  }
+  
+  .video-box iframe {
+    width: 100%;
+    height: 225px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  
+.bag-tengah {
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #f8d5d5;
+    text-align: center;
+    background-image: url(bg3.png);
+}
+
+.bag-tengah1 {
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: white;
+    text-align: center;
+}
+  
+.btn {
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    text-align: center;
+}
+  
+.btn:hover {
+    opacity: 10;
+}
+.heading {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: #5f5d60;
+}
+  
+.heading h2 {
+    font-weight: normal;
+}
+  
+.lesson {
+    float: left;
+    width: 33%;
+}
+  
+.lesson-icon {
+    position: relative;
+}
+  
+.lesson-icon p {
+    position: absolute;
+    top: 44%;
+    width: 100%;
+    color: white;
+}
+  
+.text-contents {
+    width: 80%;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 15px;
+    color: #ff1c60;
+}
+  
+  
+.message-wrapper {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 80px;
+    text-align: center;
+}
+  
+.message {
+    padding: 15px 40px;
+    background-color: rgb(245, 122, 153);
+    cursor: pointer;
+    box-shadow: 0 7px rgb(165, 49, 78);
+}
+  
+.message:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+}
+  
+footer img {
+    width: 125px;
+}
+  
+footer p {
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+}
+  
+footer {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: rgb(245, 122, 153);
+    text-align: center;
+    position: relative;
+}
+  
+@media all and (max-width: 1000px) {
+    .heading h2 {
+    font-size: 20px;
+    }
+    .lesson {
+    width: 50%;
+    margin-bottom: 50px;
+    }
+}
+@media all and (max-width: 670px) {
+    .btn {
+        width: 100%;
+        }
+        
+    .lesson {
+    width: 100%;
+    }
+    footer {
+    text-align: center;
+    }
+}
