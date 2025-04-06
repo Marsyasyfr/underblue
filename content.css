@@ -38,7 +38,23 @@ header {
 .logo {
     width: 100px;
 }
-  
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  background-color: #f48ca3;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  z-index: 999;
+}
+
+.nav-links.active {
+  display: flex;
+}
+
 .atas-kiri {
     float: left;
     margin-top: 13px;
