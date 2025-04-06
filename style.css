@@ -20,7 +20,24 @@ a {
     padding: 0 15px;
     margin: 0 auto;
 }
-  
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  background-color: #f48ca3;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  z-index: 999;
+}
+
+/* Tampilkan saat tombol diklik */
+.nav-links.active {
+  display: flex;
+}
+
 .bag-atas {
     padding: 180px 0 100px 0;
     background-image: url(bg5.png);
