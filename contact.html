@@ -17,7 +17,7 @@
           <img class="logo" src="logomaca.png">
         </div>
         <span class="fa fa-bars menu-icon"></span>
-        <div class="atas-kanan">
+        <div class="nav-links">
           <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="content.html">Content</a>
@@ -55,6 +55,14 @@
             <p>Aku Maca!</p>
           </div>
         </footer>
+  <script>
+  const menuIcon = document.querySelector('.menu-icon');
+  const navLinks = document.querySelector('.nav-links');
+
+  menuIcon.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
       </body>
     </html>
 <!-- Contact Section -->
