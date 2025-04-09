@@ -22,15 +22,25 @@ a {
 }
 
 .nav-links {
-  display: none;
-  flex-direction: column;
-  background-color: #f48ca3;
-  position: absolute;
-  top: 60px;
-  right: 20px;
-  padding: 15px;
-  border-radius: 10px;
-  z-index: 999;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: flex-end;
+  background: none;
+  position: static;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  padding: 0 15px;
+  line-height: 65px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
 }
 
 /* Tampilkan saat tombol diklik */
@@ -130,23 +140,6 @@ header {
     margin-top: 13px;
 }
   
-.atas-kanan {
-    float: right;
-    margin-right: -25px;
-}
-  
-.atas-kanan a {
-    line-height: 65px;
-    padding: 0 25px;
-    color: white;
-    display: block;
-    float: left;
-    transition: all 0.5s;
-}
-  
-.atas-kanan a:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-}
   
 .menu-icon{
     color: white;
@@ -249,7 +242,20 @@ footer {
     }
 }
 @media all and (max-width: 670px) {
-    
+  .nav-links {
+    display: none; /* DISEMBUNYIKAN di HP */
+    flex-direction: column;
+    background-color: #f48ca3;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    z-index: 999;
+  }
+     .nav-links.active {
+    display: flex;
+  }
     .btn {
     width: 100%;
     }
